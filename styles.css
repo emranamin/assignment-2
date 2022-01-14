@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Lato:wght@300;400&family=Montserrat:wght@200;400&family=Open+Sans:wght@300&family=Poppins:wght@400;500&family=Ubuntu:wght@300;400&family=Yanone+Kaffeesatz:wght@600&display=swap');
+body{
+    font-family: 'Heebo', sans-serif;
+    margin-left: 40px;
+    
+}
+/* common styles */
+a{
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 2px 15px;
+    background-color:black;
+    color: honeydew;
+  
+}
+#infpr{
+    margin-bottom: 70px;
+}
+.sec1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  margin-bottom: 70px;
+    
+}
+.sec1>div> img{
+    width: 70%;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.page1{
+    margin-right: 50px;
+  
+}
+.sec2{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.page2{
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: lightcoral 2px;
+    margin: 5%
+    box-shadow: ;
+}
