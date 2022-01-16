@@ -1,48 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Lato:wght@300;400&family=Montserrat:wght@200;400&family=Open+Sans:wght@300&family=Poppins:wght@400;500&family=Ubuntu:wght@300;400&family=Yanone+Kaffeesatz:wght@600&display=swap');
 body{
     font-family: 'Heebo', sans-serif;
-    margin-left: 40px;
+ 
     
 }
-/* common styles */
+/*----------------------
+ ---common styles start-----
+ ----------------------- */
+*{
+    box-sizing: border-box;
+}
+.margin{
+    margin-left: 5%;
+    margin-right: 10px;
+}
+.margin-top{
+    margin-top: 100px;
+}
 a{
     text-decoration: none;
     border: 1px solid;
     border-radius: 10px;
     padding: 2px 15px;
-    background-color:black;
+    background-color:red;
     color: honeydew;
   
 }
+/*----------------------
+ ---common styles end-----
+ ----------------------- */
+h1{
+    font-size: 40px;
+}
 #infpr{
     margin-bottom: 70px;
-}
-.sec1{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  margin-bottom: 70px;
-    
-}
-.sec1>div> img{
-    width: 70%;
-    background-image: url(images/Circle\ design.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-.page1{
-    margin-right: 50px;
   
 }
+#sec1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.page1 img{
+    width: 60%;
+    background-image: url(images/Circle\ design.svg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+}
+.sec1-footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 90px;
+    grid-gap: 40px;
+    margin-left: 300px;
+   
+}
+header{
+
+    text-align: center;
+}
 .sec2{
-    margin-top: 70px;
+   
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-gap: 2em;
+    
 }
 .page2{
-    border: 1px solid white;
+  
+    border: 1px solid gray;
     border-radius: 10px;
-    box-shadow: lightcoral 2px;
-    margin: 5%
-    box-shadow: ;
+    padding: 5% ;
+    box-shadow: 2px 2px 2px gray;
+    margin: 5% 5% 10% 15%
+;
+}
+.page2 img{
+    width: 100%;
+}
+#sec3{
+    display: flex;
+}
+.page3{
+    width: 40%;
+    margin-bottom: 30px;
+}
+.fab{
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.finalfooter{
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+    padding: 30px;
 }
