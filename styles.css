@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Lato:wght@300;400&family=Montserrat:wght@200;400&family=Open+Sans:wght@300&family=Poppins:wght@400;500&family=Ubuntu:wght@300;400&family=Yanone+Kaffeesatz:wght@600&display=swap');
 body{
     font-family: 'Heebo', sans-serif;
- 
-    
 }
+
+
+
+
 
 
 /*----------------------
@@ -101,12 +103,13 @@ grid-template-columns: repeat(3,1fr);
    
     padding: 30px;
 }
-/* responsive part start*/
-@media only screen and  (max-width:688px){
+/*-------------------------
+-- responsive part start--
+--------------------------*/
+@media only screen and  (max-width:1312px){
     .page1,.page2,.page3{
         width: 100%;
       text-align: center;
-      
     }
     div#influ {
         order: 2;
@@ -114,12 +117,51 @@ grid-template-columns: repeat(3,1fr);
     div#camera {
         order: 1;
     }
-   
+    .sec1,.sec3{
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+    }
+    .sec2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+
+@media only screen and  (max-width:992px){
+    .page1,.page2,.page3{
+        width: 100%;
+      text-align: center;
+    }
+    div#influ {
+        order: 2;
+    }
+    div#camera {
+        order: 1;
     }
     .sec1,.sec2,.sec3{
-      
         display: grid;
         grid-template-columns:repeat(1,1fr) ;
-       
+    }
+  }
+
+@media only screen and  (max-width:688px){
+    .page1,.page2,.page3{
+        width: 100%;
+      text-align: center;
+    }
+    div#influ {
+        order: 2;
+    }
+    div#camera {
+        order: 1;
+    }
+    .sec1,.sec3{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+    }
+    .sec2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
   }
