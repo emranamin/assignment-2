@@ -4,12 +4,12 @@ body{
  
     
 }
+
+
 /*----------------------
  ---common styles start-----
  ----------------------- */
-*{
-    box-sizing: border-box;
-}
+
 .margin{
     margin-left: 5%;
     margin-right: 10px;
@@ -36,11 +36,15 @@ h1{
     margin-bottom: 70px;
   
 }
-#sec1{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.sec1 {
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+}
+.page1{
+    width: 50%;
 }
 .page1 img{
+
     width: 60%;
     background-image: url(images/Circle\ design.svg);
     background-size: 100%;
@@ -60,14 +64,12 @@ header{
     text-align: center;
 }
 .sec2{
-   
+ 
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 2em;
+grid-template-columns: repeat(3,1fr);
     
 }
 .page2{
-  
     border: 1px solid gray;
     border-radius: 10px;
     padding: 5% ;
@@ -78,12 +80,15 @@ header{
 .page2 img{
     width: 100%;
 }
-#sec3{
+.sec3{
     display: flex;
 }
 .page3{
     width: 40%;
     margin-bottom: 30px;
+}
+.page3 img{
+    width: 62%;
 }
 .fab{
     margin-right: 15px;
@@ -96,3 +101,25 @@ header{
    
     padding: 30px;
 }
+/* responsive part start*/
+@media only screen and  (max-width:688px){
+    .page1,.page2,.page3{
+        width: 100%;
+      text-align: center;
+      
+    }
+    div#influ {
+        order: 2;
+    }
+    div#camera {
+        order: 1;
+    }
+   
+    }
+    .sec1,.sec2,.sec3{
+      
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+       
+    }
+  }
