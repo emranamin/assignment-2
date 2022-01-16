@@ -18,8 +18,9 @@ body{
 }
 .margin-top{
     margin-top: 100px;
+   
 }
-a{
+a{  font-size: 20px;
     text-decoration: none;
     border: 1px solid;
     border-radius: 10px;
@@ -36,17 +37,15 @@ h1{
 }
 #infpr{
     margin-bottom: 70px;
-  
+    font-size: 22px;
 }
 .sec1 {
     display: flex;
-    /* grid-template-columns: repeat(2,1fr); */
 }
 .page1{
     width: 50%;
 }
 .page1 img{
-
     width: 60%;
     background-image: url(images/Circle\ design.svg);
     background-size: 100%;
@@ -59,38 +58,40 @@ h1{
     margin-top: 90px;
     grid-gap: 40px;
     margin-left: 300px;
-   
 }
 header{
-
     text-align: center;
+    font-size: 22px;
 }
 .sec2{
- 
     display: grid;
-grid-template-columns: repeat(3,1fr);
-    
+    grid-template-columns: repeat(3,1fr);
 }
 .page2{
+    text-align: left;
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 5% ;
+    padding: 15% ;
     box-shadow: 2px 2px 2px gray;
-    margin: 5% 5% 10% 15%
-;
+    margin: 10% 10%;
 }
 .page2 img{
     width: 100%;
 }
+.fas{
+    color:orange;
+}
 .sec3{
     display: flex;
+    width: 90%;
+ 
 }
 .page3{
-    width: 40%;
-    margin-bottom: 30px;
+    width: 50%;
+   
 }
 .page3 img{
-    width: 62%;
+    width: 60%;
 }
 .fab{
     margin-right: 15px;
@@ -100,55 +101,38 @@ grid-template-columns: repeat(3,1fr);
     background-color: black;
     color: white;
     text-align: center;
-   
+   margin-top: 30px;
     padding: 30px;
 }
 /*-------------------------
 -- responsive part start--
 --------------------------*/
-@media only screen and  (max-width:1312px){
-    .page1,.page2,.page3{
+
+@media only screen and  (max-width:1400px){
+    .page1,.page3{
         width: 100%;
-      text-align: center;
+      text-align: left;
     }
-    div#influ {
-        order: 2;
-    }
-    div#camera {
-        order: 1;
+    .page2{
+        width: 50%;
     }
     .sec1,.sec3{
         display: grid;
         grid-template-columns:repeat(2,1fr) ;
+       
     }
     .sec2{
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
   }
-
-
-@media only screen and  (max-width:992px){
-    .page1,.page2,.page3{
+  @media only screen and (min-width:689px) and (max-width:992px){
+    .page1,.page3{
         width: 100%;
       text-align: center;
     }
-    div#influ {
-        order: 2;
-    }
-    div#camera {
-        order: 1;
-    }
-    .sec1,.sec2,.sec3{
-        display: grid;
-        grid-template-columns:repeat(1,1fr) ;
-    }
-  }
-
-@media only screen and  (max-width:688px){
-    .page1,.page2,.page3{
-        width: 100%;
-      text-align: center;
+    .page2{
+        width: 50%;
     }
     div#influ {
         order: 2;
@@ -163,5 +147,33 @@ grid-template-columns: repeat(3,1fr);
     .sec2{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+      
     }
+
   }
+
+@media only screen and  (max-width:688px){
+    .page1,.page3{
+        width: 100%;
+      text-align: center;
+    }
+    .page2{
+        width: 50%;
+    }
+    div#influ {
+        order: 2;
+    }
+    div#camera {
+        order: 1;
+    }
+        .sec1,.sec2,.sec3{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+    }
+  
+  }
+
+
+
+
+  
