@@ -20,7 +20,7 @@ body{
     margin-top: 100px;
    
 }
-a{  font-size: 20px;
+.a{  font-size: 20px;
     text-decoration: none;
     border: 1px solid;
     border-radius: 10px;
@@ -32,6 +32,15 @@ a{  font-size: 20px;
 /*----------------------
  ---common styles end-----
  ----------------------- */
+ #f-p2{
+     text-align: right;
+     padding-right: 2%;
+ }
+ #a-p2{
+
+     color: black;
+     text-decoration: none;
+ }
 h1{
     font-size: 40px;
 }
@@ -80,6 +89,10 @@ header{
 }
 .fas.fa-star{
     color:orange;
+}
+.p2footer{
+    text-decoration: none;
+    color: black;
 }
 .sec3{
     display: flex;
